@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <HelloWorld />
+    <Calendar />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Calendar from './components/Calendar-App.vue';
 export default {
   name: 'App',
+  data: () => ({
+    message: 'HelloWorld!',
+  }),
   components: {
-    HelloWorld
-  }
-}
+    Calendar,
+  },
+};
 </script>
-
